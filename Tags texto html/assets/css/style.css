@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #24252A;
+}
+
+h1, h2, h3, i, p {
+    color:#dbdbdb;
+}
+
+h1 {
+    font-size: 2.2em;
+    color:#cfe415;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    color:#cfe415;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+p.text{
+    font-size:1.1em;
+    margin:20px 0;
+    line-height: 1.5;
+}
+.text_small{
+    font-size:1em;
+    margin:8px 0;
+}
+.text_small span{
+    color:#d1e047;
+   
+}
+
+blockquote{
+    color:#3bae9b;
+    font-size:1.1em;
+    border-left: 3px solid #3bae9b;  
+    margin: 1.5em 30px;
+    padding: 0.5em 10px;
+} 
+
+.image__project {
+    opacity: .5;
+    margin-bottom: 10px;
+}
+figure {
+    margin-bottom: 30px;
+    color:rgb(14, 212, 169);
+    font-size:.8em
+}
+figcaption span{
+    font-size: .87em;
+}
+
+
+li, a, button{
+ font-family: "Montserrat", sans-serif;
+ font-weight: 500;
+ font-size:15px;
+ color:#24252A;
+ text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+    height: 90px;
+    background-color: #ffffff; 
+
+}
+
+.logo{
+    cursor:pointer;
+    margin-right: auto;
+
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding:0px 20px;
+    text-transform:uppercase;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color:#0088a9;
+}
+
+button {
+    margin-left: 30px;
+    padding: 9px 25px;
+    background-color: #3bae9b;
+    color:#24252A;
+    border:none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+#section__into, #section__lobo, #section__pardela, #section__urso{
+    width: 40%;
+    flex-direction: column;
+    margin-bottom:50px;
+}

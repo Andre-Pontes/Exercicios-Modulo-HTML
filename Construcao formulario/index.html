@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices with From and Table</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            height: 80px;
+            background-color: cornflowerblue;
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+
+        }
+        nav ul li{
+            flex-direction: row ;
+        }
+        main{
+            margin:0 20px ;
+            display: flex;
+            flex-direction: column;
+        }
+        section{
+            margin-bottom: 50px;
+        }
+        p, label, table{
+            font: .9rem 'Fira Sans', sans-serif;
+            margin:0 0 5px;
+        }
+        label {
+            padding: 5px;
+        }
+
+        input[type=text], 
+        input[type=email]
+        {
+            width: 250px;
+            height: 30px;
+        }
+        input[type=radio] {
+            margin: 10px 0;
+        }
+
+        input[type=datetime-local],select{
+            width: 250px;
+            height: 40px;
+        }
+
+        textarea{
+            width: 250px;
+            height: 60px;
+        }
+
+        button{
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            background-color: cornflowerblue;
+        }
+        /* Style Tabela Quartos */
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        tr, th, td{
+            border: 1px solid cornflowerblue;
+            padding: 20px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Ver Formulário</li>
+                <li>Ver Tabela</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Exercicio From/Table</h1>
+
+            <form action="">
+
+                <p>Nome Completo</p>
+                <input type="text" placeholder="Inserir nome">
+                <br>
+                <br>
+                <p>Email</p>
+                <input type="text" name="" placeholder="Inserir o nome">
+                <br>
+                <br>
+                <p>Inserir com contas gmail</p>
+                <input type="email" pattern=".+@gmail.com" size="5" placeholder="Inserir Vários Emails" multiple>
+                <br>
+                <br>
+                <p>Data da Chegada</p>
+                <input type="datetime-local" name="" id="">
+                <br>
+                <br>
+                <p>Número de Noites</p>
+                <select name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+                <br>
+                <p>Número de Pessoas</p>
+                <select name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+                <br>
+                <p>Tipo de Quarto</p>
+                <input type="radio" name="quarto" value="solteiro"><label>Solteiro</label><br>
+
+                <input type="radio" name="quarto" value="duplo"><label>Duplo</label><br>
+
+                <input type="radio" name="quarto" value ="casal"><label>Casal</label><br>
+
+                <input type="radio" name="quarto" value="kingSize"><label for="kingSize">King Size</label><br>
+
+                <input type="radio" name="quarto" value="delux"><label>Deluxe</label>
+                <br>
+                <br>
+                <p>Observações</p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escreva aqui as suas observações"></textarea><br><br>
+                <button>Submeter</button>
+            </form>
+        </section> 
+            
+        <section>   
+            <h1>Tabelas de Quartos</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">QUARTO</th>
+                        <th>Disponibilidade</th>
+                    </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tipo de Quartos</th>
+                        <th>Características</th>
+                        <th>Capacidade</th>
+                        <th>Ver Datas Livres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Casal</td>
+                        <td>2 Camas, 15m<sup>2</sup></td>
+                        <td>2 Adulto</td>
+                        <td><button>Submeter</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>King Size</td>
+                        <td>Cama Queen size, 20m<sup>2</sup></td>
+                        <td>2 Adultos</td>
+                        <td><button>Submeter</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
